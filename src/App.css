@@ -1,5 +1,273 @@
-.App {
+/* Custom Fonts */
+@font-face {
+  font-family: Open Sans;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+}
+
+/* Default CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Open Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  ;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none
+}
+
+@media (min-width: 1700px) {
+  main.container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+p.success {
+  color: green
+}
+
+p.danger {
+  color: red
+}
+
+/* End of default css */
+
+/* Navbar */
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"]#basic-navbar-nav {
+  background: white;
+  padding: 20px;
+  border-radius: 3%;
+  transition: all 300ms linear;
+
+}
+
+.kar>.navbar-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 40px;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 18px;
+
+}
+
+nav.navbar a.navbar-brand {
+  width: 20%;
+}
+
+/*Banner*/
+.addNewBtn {
+  background-color: rgba(32, 32, 165, 1);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  height: 44px;
+  margin: 10px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+
+}
+
+.addNewBtn:hover {
+  background-color: rgb(21, 21, 106);
+}
+
+.learnBtn {
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  height: 44px;
+  margin: 10px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.learnBtn:hover {
+  background-color: #171717;
+  color: #fff
+}
+
+.col1 h1 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+
+}
+
+.col1 p {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-top: 5%
+}
+
+.banner {
+  background: linear-gradient(272.21deg, #064E55 9.73%, #26828B 53.65%, #3DA8B3 80.95%);
+  width:100%;
+  padding: 4.9%;
+
+}
+
+.banner img {
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px)
+  }
+
+  50% {
+    transform: translateY(20px)
+  }
+
+  100% {
+    transform: translateY(-20px)
+  }
+}
+
+.row1 {
+  margin: 0 10%
+}
+
+/*Add*/
+
+.add > h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0;
+  color: #5000A1;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.formGrp {
+  margin: 50px 0;
+  color: #000000
+}
+
+.form {
+  margin: 20px 70px;
+  height: 10rem;
+
+}
+
+.submitBtn {
+  margin: 27px 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px
+}
+
+.form-select {
+  height: 60px;
+
+}
+
+.form-control {
+  height: 60px;
+
+}
+
+/*Features*/
+.secondAddBtn {
+  background-color: #6363CA;
+  color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.imgContainer{
+  width: 250px;
+}
+
+
+
+
+body {
   text-align: center;
+  background: linear-gradient(180deg, #BBE1E5 0%, #086972 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -32,6 +300,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
